@@ -1,0 +1,151 @@
+:root {
+  --sizemini: 1px;
+  --sizetiny: 10px;
+  --sizestd: 12px;
+  --sizevast: 15px;
+  --sizebig1: 18px;
+  --sizebig2: 20px;
+  --sizehuge1: 24px;
+  --sizehuge2: 32px;
+}
+
+* {
+  font-family: "Open Sans";
+  color: #111;
+}
+
+h1 {
+  color: #222;
+  font-size: var(--sizebig2);
+}
+
+h2 {
+  color: lightcoral;
+  font-size: var(--sizebig1);
+  margin-top: 5px;
+}
+
+h3 {
+  color: #4297A0;
+  font-size: var(--sizevast);
+}
+
+h4 {
+  color: grey;
+  font-size: var(--sizestd);
+}
+
+.d-flex {
+  display: flex;
+}
+
+.align-c {
+  align-items: center;
+}
+
+.justif-c {
+  justify-items: center;
+}
+
+.justif-l {
+  justify-self: start;
+}
+
+.justif-s {
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.itemize-no {
+  list-style-type: none;
+}
+
+.line-null {
+  line-height: 0px;
+}
+
+.line-big {
+  line-height: var(--sizebig2);
+}
+
+.pad-t1 {
+  padding-top: var(--sizetiny);
+}
+
+.pad-l1 {
+  padding-left: var(--sizetiny);
+}
+
+.margin-null {
+  margin-left: calc(-1 * var(--sizebig2));
+}
+
+.size-std, li {
+  font-size: var(--sizestd);
+}
+
+ul li a {
+  color: blue;
+}
+
+.size-big {
+  font-size: var(--sizehuge1);
+}
+
+.container {
+  display: grid;
+  grid-template-columns: var(--sizetiny) 42px fit-content(100%);
+  grid-template-rows: var(--sizehuge2) var(--sizehuge2) var(--sizehuge2) var(--sizehuge2);
+}
+
+.box {
+  margin: var(--sizetiny);
+  padding-top: var(--sizetiny);
+  padding-left: var(--sizetiny);
+  padding-right: var(--sizetiny);
+  padding-bottom: var(--sizemini);
+  border: -1px solid gray;
+  box-shadow:
+    rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  background-color: #eee;
+  border-radius: 0;
+}
+
+/* switch */
+
+.inside {
+  height: var(--sizehuge2);
+}
+
+.switch input {
+  position: absolute;
+  opacity: 0;
+}
+
+.switch {
+  display: inline-block;
+  font-size: var(--sizebig2); /* 1 */
+  height: 1em;
+  width: 2em;
+  background: #bbb;
+  border-radius: 1em;
+}
+
+.switch div {
+  height: 1em;
+  width: 1em;
+  border-radius: 1em;
+  background: #ddd;
+  box-shadow: 0 0.1em 0.3em RGBA(0, 0, 0, 0.3);
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.switch input:checked + div {
+  -webkit-transform: translate3d(100%, 0, 0);
+  -moz-transform: translate3d(100%, 0, 0);
+  transform: translate3d(100%, 0, 0);
+  background: #080;
+}
