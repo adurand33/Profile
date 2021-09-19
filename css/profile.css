@@ -94,7 +94,7 @@ ul li a {
 
 .container {
   display: grid;
-  grid-template-columns: var(--sizetiny) 42px fit-content(100%);
+  grid-template-columns: var(--sizetiny) 44px fit-content(100%);
   grid-template-rows: var(--sizehuge2) var(--sizehuge2) var(--sizehuge2) var(--sizehuge2);
 }
 

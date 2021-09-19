@@ -36,7 +36,7 @@ checkwide.addEventListener("change", function () {
   }
 });
 
-//
+// reorder
 
 function SetOneUnderTheOther() {
   let container = title.parentNode;
@@ -71,7 +71,7 @@ function SetNextToEachOther() {
   proifp.style.display = "none";
 }
 
-//
+// translate
 
 function TranslateToEnglish() {
   document.getElementById("title1").textContent = "3D Software Consultant";
@@ -87,9 +87,7 @@ function TranslateToEnglish() {
 
   document.getElementById("school0").textContent = "Studies";
   document.getElementById("school1").textContent = "PhD in Applied Mathematics";
-  document.getElementById("school2").textContent = "→ École Centrale Paris, 1996";
-  document.getElementById("school3").textContent = "Postgrade in Applied Mathematics";
-  document.getElementById("school4").textContent = "→ Université de Bordeaux I, 1993";
+  document.getElementById("school2").textContent = "Postgrade in Applied Mathematics";
 
   document.getElementById("pro0").textContent = "Experience";
   document.getElementById("pro1a").textContent = "Lectra → Business Consultant";
@@ -122,7 +120,7 @@ function TranslateToEnglish() {
 
   document.getElementById("pro5a").textContent = "Institut Français du Pétrole → phD";
   document.getElementById("pro5b").textContent = "Sept. 1993 - Sept. 1996, Rueil-Malmaison (92) → 3 YEARS";
-  document.getElementById("pro5c").textContent = "Build an app computing 2D fluids in engines";
+  document.getElementById("pro5c").textContent = "Code a research app computing 2D fluids in engines";
   document.getElementById("pro5d").textContent = "Euler and Navier-Stokes equations resolving";
 
   document.getElementById("hobbies0").textContent = "Hobbies";
@@ -148,9 +146,7 @@ function TranslateToFrench() {
 
   document.getElementById("school0").textContent = "Études";
   document.getElementById("school1").textContent = "Docteur en Maths Appliquées";
-  document.getElementById("school2").textContent = "→ École Centrale Paris, 1996";
-  document.getElementById("school3").textContent = "DEA en Maths Appliquées";
-  document.getElementById("school4").textContent = "→ Université de Bordeaux I, 1993";
+  document.getElementById("school2").textContent = "DEA en Maths Appliquées";
 
   document.getElementById("pro0").textContent = "Parcours";
   document.getElementById("pro1a").textContent = "Lectra → Consultant Business";
@@ -169,7 +165,7 @@ function TranslateToFrench() {
   document.getElementById("pro2g").textContent = "Présentations en interne et externe";
   document.getElementById("pro2h").textContent = "Positionnement Marketing de l'offre 3D";
 
-  document.getElementById("pro3a").textContent = "TopSolid → Ingénieur d'Etudes";
+  document.getElementById("pro3a").textContent = "TopSolid → Ingénieur d'Études";
   document.getElementById("pro3b").textContent = "Juil. 1999 - Juin 2000, Toulouse (31) → 1 AN";
   document.getElementById("pro3c").textContent = "Architecture associative de DC3D via TopADS";
   document.getElementById("pro3d").textContent = "Extraction du code 3D de dépliage de C vers C++";
