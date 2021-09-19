@@ -86,7 +86,7 @@ function TranslateToEnglish() {
   document.getElementById("skills7").textContent = "3D CAD Trainer";
 
   document.getElementById("school0").textContent = "Studies";
-  document.getElementById("school1").textContent = "phD in Applied Mathematics";
+  document.getElementById("school1").textContent = "PhD in Applied Mathematics";
   document.getElementById("school2").textContent = "→ École Centrale Paris, 1996";
   document.getElementById("school3").textContent = "Postgrade in Applied Mathematics";
   document.getElementById("school4").textContent = "→ Université de Bordeaux I, 1993";
@@ -101,15 +101,15 @@ function TranslateToEnglish() {
 
   document.getElementById("pro2a").textContent = "Lectra → R&D Project Manager";
   document.getElementById("pro2b").textContent = "July 2000 - June 2017, Cestas (33) → 17 YEARS";
-  document.getElementById("pro2c").textContent = "DC3D software creation from scratch";
-  document.getElementById("pro2d").textContent = "Tracking of Automotive beta sites (USA, Japan)";
+  document.getElementById("pro2c").textContent = "DC3D/DC2D software creation from scratch";
+  document.getElementById("pro2d").textContent = "Automotive beta sites tracking (USA, Japan)";
   document.getElementById("pro2e").textContent = "Customer interviews and requests specifications";
   document.getElementById("pro2f").textContent = "Selection and recrutment of five developers";
   document.getElementById("pro2g").textContent = "Internal and external corporate presentations";
-  document.getElementById("pro2h").textContent = "3D offer branding and Marketing positionning";
+  document.getElementById("pro2h").textContent = "3D offer branding and Marketing positioning";
 
   document.getElementById("pro3a").textContent = "TopSolid → Software Engineer";
-  document.getElementById("pro3b").textContent = "Juil. 1999 - Juin 2000, Toulouse (31) → 1 YEAR";
+  document.getElementById("pro3b").textContent = "July 1999 - June 2000, Toulouse (31) → 1 YEAR";
   document.getElementById("pro3c").textContent = "DC3D associative architecture using TopADS";
   document.getElementById("pro3d").textContent = "Extracting 3D flattening computer code in C++";
   document.getElementById("pro3e").textContent = "Inria mesher integration in DC3D via Parasolid";
@@ -138,11 +138,11 @@ function TranslateToFrench() {
   document.getElementById("title1").textContent = "Consultant Logiciels 3D";
 
   document.getElementById("skills0").textContent = "Profil";
-  document.getElementById("skills1").textContent = "Métiers du textile";
+  document.getElementById("skills1").textContent = "Métiers du Textile";
   document.getElementById("skills2").textContent = "Marché Automobile";
   document.getElementById("skills3").textContent = "Marché Ameublement";
   document.getElementById("skills4").textContent = "Consultant Business";
-  document.getElementById("skills5").textContent = "Encadrement de projet";
+  document.getElementById("skills5").textContent = "Encadrement de Projet";
   document.getElementById("skills6").textContent = "Développement Applicatif";
   document.getElementById("skills7").textContent = "Formateur CAO 3D";
 
@@ -162,11 +162,11 @@ function TranslateToFrench() {
 
   document.getElementById("pro2a").textContent = "Lectra → Chef de Projet R&D";
   document.getElementById("pro2b").textContent = "Juil. 2000 - Juin 2017, Cestas (33) → 17 ANS";
-  document.getElementById("pro2c").textContent = "Création du logiciel DC3D from scratch";
+  document.getElementById("pro2c").textContent = "Création des logiciels DC3D/DC2D from scratch";
   document.getElementById("pro2d").textContent = "Suivi des sites pilotes Automobile (USA, Japon)";
   document.getElementById("pro2e").textContent = "Recueil et spécification des demandes clients";
   document.getElementById("pro2f").textContent = "Recrutement de cinq développeurs";
-  document.getElementById("pro2g").textContent = "Présentations en interne et en externe";
+  document.getElementById("pro2g").textContent = "Présentations en interne et externe";
   document.getElementById("pro2h").textContent = "Positionnement Marketing de l'offre 3D";
 
   document.getElementById("pro3a").textContent = "TopSolid → Ingénieur d'Etudes";
