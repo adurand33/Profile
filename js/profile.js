@@ -1,18 +1,18 @@
-// assign all elements
+// assign elements
 
-var title = document.getElementById("title");
-var skills = document.getElementById("skills");
-var contact = document.getElementById("contact");
-var school = document.getElementById("school");
-var hobbies = document.getElementById("hobbies");
-var proifp = document.getElementById("proifp");
-var pro = document.getElementById("pro");
+var title = GetElt("title");
+var skills = GetElt("skills");
+var contact = GetElt("contact");
+var school = GetElt("school");
+var hobbies = GetElt("hobbies");
+var proifp = GetElt("proifp");
+var pro = GetElt("pro");
 
-var divdown = document.getElementById("divdown");
-var divleft = document.getElementById("divleft");
+var divdown = GetElt("divdown");
+var divleft = GetElt("divleft");
 
-var checklang = document.getElementById("checklang");
-var checkwide = document.getElementById("checkwide");
+var checklang = GetElt("checklang");
+var checkwide = GetElt("checkwide");
 
 SetOneUnderTheOther();
 
@@ -26,7 +26,7 @@ checklang.addEventListener("change", function () {
   }
 });
 
-//
+// switch
 
 checkwide.addEventListener("change", function () {
   if (this.checked) {
@@ -71,120 +71,130 @@ function SetNextToEachOther() {
   proifp.style.display = "none";
 }
 
-// translate
+// translate EN
 
 function TranslateToEnglish() {
-  document.getElementById("title1").textContent = "3D Software Consultant";
+  SetText("title1", "3D Software Consultant");
 
-  document.getElementById("skills0").textContent = "Skillset";
-  document.getElementById("skills1").textContent = "Soft Materials";
-  document.getElementById("skills2").textContent = "Automotive Market";
-  document.getElementById("skills3").textContent = "Furniture Market";
-  document.getElementById("skills4").textContent = "Business Consultant";
-  document.getElementById("skills5").textContent = "Project Manager";
-  document.getElementById("skills6").textContent = "Software Developer";
-  document.getElementById("skills7").textContent = "3D CAD Trainer";
+  SetText("skills0", "Skillset");
+  SetText("skills1", "Soft Materials");
+  SetText("skills2", "Automotive Market");
+  SetText("skills3", "Furniture Market");
+  SetText("skills4", "Business Consultant");
+  SetText("skills5", "Project Manager");
+  SetText("skills6", "Software Developer");
+  SetText("skills7", "3D CAD Trainer");
 
-  document.getElementById("school0").textContent = "Studies";
-  document.getElementById("school1").textContent = "PhD in Applied Mathematics";
-  document.getElementById("school2").textContent = "Postgrade in Applied Mathematics";
+  SetText("school0", "Studies");
+  SetText("school1", "PhD in Applied Mathematics");
+  SetText("school2", "Postgrade in Applied Mathematics");
 
-  document.getElementById("pro0").textContent = "Experience";
-  document.getElementById("pro1a").textContent = "Lectra → Business Consultant";
-  document.getElementById("pro1b").textContent = "July 2017 - July 2021, Cestas (33) → 4 YEARS";
-  document.getElementById("pro1c").textContent = "Help sofa companies to master 3D CAD apps";
-  document.getElementById("pro1d").textContent = "Demonstrations, training, expertise, sales in 3D";
-  document.getElementById("pro1e").textContent = "Turnover from 3M€ to 6M€ over the period";
-  document.getElementById("pro1f").textContent = "Activity focused on Chinese market, 2022 visa";
+  SetText("pro0", "Experience");
+  SetText("pro1a", "Lectra → Business Consultant");
+  SetText("pro1b", "July 2017 - July 2021, Cestas (33) → 4 YEARS");
+  SetText("pro1c", "Help sofa companies to master 3D CAD apps");
+  SetText("pro1d", "Demonstrations, training, expertise, sales in 3D");
+  SetText("pro1e", "Turnover from 3M€ to 6M€ over the period");
+  SetText("pro1f", "Activity focused on Chinese market, 2022 visa");
 
-  document.getElementById("pro2a").textContent = "Lectra → R&D Project Manager";
-  document.getElementById("pro2b").textContent = "July 2000 - June 2017, Cestas (33) → 17 YEARS";
-  document.getElementById("pro2c").textContent = "DC3D/DC2D software creation from scratch";
-  document.getElementById("pro2d").textContent = "Automotive beta sites tracking (USA, Japan)";
-  document.getElementById("pro2e").textContent = "Customer interviews and requests specifications";
-  document.getElementById("pro2f").textContent = "Selection and recrutment of five developers";
-  document.getElementById("pro2g").textContent = "Internal and external corporate presentations";
-  document.getElementById("pro2h").textContent = "3D offer branding and Marketing positioning";
+  SetText("pro2a", "Lectra → R&D Project Manager");
+  SetText("pro2b", "July 2000 - June 2017, Cestas (33) → 17 YEARS");
+  SetText("pro2c", "DC3D/DC2D software creation from scratch");
+  SetText("pro2d", "Automotive beta sites tracking (USA, Japan)");
+  SetText("pro2e", "Customer interviews and requests specifications");
+  SetText("pro2f", "Selection and recrutment of five developers");
+  SetText("pro2g", "Internal and external corporate presentations");
+  SetText("pro2h", "3D offer branding and Marketing positioning");
 
-  document.getElementById("pro3a").textContent = "TopSolid → Software Engineer";
-  document.getElementById("pro3b").textContent = "July 1999 - June 2000, Toulouse (31) → 1 YEAR";
-  document.getElementById("pro3c").textContent = "DC3D associative architecture using TopADS";
-  document.getElementById("pro3d").textContent = "Extracting 3D flattening computer code in C++";
-  document.getElementById("pro3e").textContent = "Inria mesher integration in DC3D via Parasolid";
+  SetText("pro3a", "TopSolid → Software Engineer");
+  SetText("pro3b", "July 1999 - June 2000, Toulouse (31) → 1 YEAR");
+  SetText("pro3c", "DC3D associative architecture using TopADS");
+  SetText("pro3d", "Extracting 3D flattening computer code in C++");
+  SetText("pro3e", "Inria mesher integration in DC3D via Parasolid");
 
-  document.getElementById("pro4a").textContent = "Dassault Systèmes → R&D Engineer";
-  document.getElementById("pro4b").textContent = "Oct. 1996 - June 1999, Suresnes (92) → 3 YEARS";
-  document.getElementById("pro4c").textContent = "Coding 2D and 3D finite elements quality";
-  document.getElementById("pro4d").textContent = "Coding Nastran Bulk data export .DAT";
-  document.getElementById("pro4e").textContent = "Training customers to code into CATIA";
+  SetText("pro4a", "Dassault Systèmes → R&D Engineer");
+  SetText("pro4b", "Oct. 1996 - June 1999, Suresnes (92) → 3 YEARS");
+  SetText("pro4c", "Coding 2D and 3D finite elements quality");
+  SetText("pro4d", "Coding Nastran Bulk data export .DAT");
+  SetText("pro4e", "Training customers to code into CATIA");
 
-  document.getElementById("pro5a").textContent = "Institut Français du Pétrole → phD";
-  document.getElementById("pro5b").textContent = "Sept. 1993 - Sept. 1996, Rueil-Malmaison (92) → 3 YEARS";
-  document.getElementById("pro5c").textContent = "Code a research app computing 2D fluids in engines";
-  document.getElementById("pro5d").textContent = "Euler and Navier-Stokes equations resolving";
+  SetText("pro5a", "Institut Français du Pétrole → phD");
+  SetText("pro5b", "Sept. 1993 - Sept. 1996, Rueil-Malmaison (92) → 3 YEARS");
+  SetText("pro5c", "Code a research app computing 2D fluids in engines");
+  SetText("pro5d", "Euler and Navier-Stokes equations resolving");
 
-  document.getElementById("hobbies0").textContent = "Hobbies";
-  document.getElementById("hobbies1").textContent = "Athletics";
-  document.getElementById("hobbies2").textContent = "Marathon";
-  document.getElementById("hobbies3").textContent = "Cycling";
-  document.getElementById("hobbies4").textContent = "TV Shows";
+  SetText("hobbies0", "Hobbies");
+  SetText("hobbies1", "Athletics");
+  SetText("hobbies2", "Marathon");
+  SetText("hobbies3", "Cycling");
+  SetText("hobbies4", "TV Shows");
 }
 
-//
+// translate FR
 
 function TranslateToFrench() {
-  document.getElementById("title1").textContent = "Consultant Logiciels 3D";
+  SetText("title1", "Consultant Logiciels 3D");
 
-  document.getElementById("skills0").textContent = "Profil";
-  document.getElementById("skills1").textContent = "Métiers du Textile";
-  document.getElementById("skills2").textContent = "Marché Automobile";
-  document.getElementById("skills3").textContent = "Marché Ameublement";
-  document.getElementById("skills4").textContent = "Consultant Business";
-  document.getElementById("skills5").textContent = "Encadrement de Projet";
-  document.getElementById("skills6").textContent = "Développement Applicatif";
-  document.getElementById("skills7").textContent = "Formateur CAO 3D";
+  SetText("skills0", "Profil");
+  SetText("skills1", "Métiers du Textile");
+  SetText("skills2", "Marché Automobile");
+  SetText("skills3", "Marché Ameublement");
+  SetText("skills4", "Consultant Business");
+  SetText("skills5", "Encadrement de Projet");
+  SetText("skills6", "Développement Appl(icatif");
+  SetText("skills7", "Formateur CAO 3D");
 
-  document.getElementById("school0").textContent = "Études";
-  document.getElementById("school1").textContent = "Docteur en Maths Appliquées";
-  document.getElementById("school2").textContent = "DEA en Maths Appliquées";
+  SetText("school0", "Études");
+  SetText("school1", "Docteur en Maths Appliquées");
+  SetText("school2", "DEA en Maths Appliquées");
 
-  document.getElementById("pro0").textContent = "Parcours";
-  document.getElementById("pro1a").textContent = "Lectra → Consultant Business";
-  document.getElementById("pro1b").textContent = "Juil. 2017 - Juil. 2021, Cestas (33) → 4 ANS";
-  document.getElementById("pro1c").textContent = "Aider les sociétés de sofa à maîtriser les CAO 3D";
-  document.getElementById("pro1d").textContent = "Démonstrations, formations, expertise, ventes de 3D";
-  document.getElementById("pro1e").textContent = "Turnover passant de 3M€ à 6M€ sur la période";
-  document.getElementById("pro1f").textContent = "Activité centrée sur le marché chinois, visa 2022";
+  SetText("pro0", "Parcours");
+  SetText("pro1a", "Lectra → Consultant Business");
+  SetText("pro1b", "Juil. 2017 - Juil. 2021, Cestas (33) → 4 ANS");
+  SetText("pro1c", "Aider les sociétés de sofa à maîtriser les CAO 3D");
+  SetText("pro1d", "Démonstrations, formations, expertise, ventes de 3D");
+  SetText("pro1e", "Turnover passant de 3M€ à 6M€ sur la période");
+  SetText("pro1f", "Activité centrée sur le marché chinois, visa 2022");
 
-  document.getElementById("pro2a").textContent = "Lectra → Chef de Projet R&D";
-  document.getElementById("pro2b").textContent = "Juil. 2000 - Juin 2017, Cestas (33) → 17 ANS";
-  document.getElementById("pro2c").textContent = "Création des logiciels DC3D/DC2D from scratch";
-  document.getElementById("pro2d").textContent = "Suivi des sites pilotes Automobile (USA, Japon)";
-  document.getElementById("pro2e").textContent = "Recueil et spécification des demandes clients";
-  document.getElementById("pro2f").textContent = "Recrutement de cinq développeurs";
-  document.getElementById("pro2g").textContent = "Présentations en interne et externe";
-  document.getElementById("pro2h").textContent = "Positionnement Marketing de l'offre 3D";
+  SetText("pro2a", "Lectra → Chef de Projet R&D");
+  SetText("pro2b", "Juil. 2000 - Juin 2017, Cestas (33) → 17 ANS");
+  SetText("pro2c", "Création des logiciels DC3D/DC2D from scratch");
+  SetText("pro2d", "Suivi des sites pilotes Automobile (USA, Japon)");
+  SetText("pro2e", "Recueil et spécification des demandes clients");
+  SetText("pro2f", "Recrutement de cinq développeurs");
+  SetText("pro2g", "Présentations en interne et externe");
+  SetText("pro2h", "Positionnement Marketing de l'offre 3D");
 
-  document.getElementById("pro3a").textContent = "TopSolid → Ingénieur d'Études";
-  document.getElementById("pro3b").textContent = "Juil. 1999 - Juin 2000, Toulouse (31) → 1 AN";
-  document.getElementById("pro3c").textContent = "Architecture associative de DC3D via TopADS";
-  document.getElementById("pro3d").textContent = "Extraction du code 3D de dépliage de C vers C++";
-  document.getElementById("pro3e").textContent = "Intégration du mailleur de l'Inria à DC3D via Parasolid";
+  SetText("pro3a", "TopSolid → Ingénieur d'Études");
+  SetText("pro3b", "Juil. 1999 - Juin 2000, Toulouse (31) → 1 AN");
+  SetText("pro3c", "Architecture associative de DC3D via TopADS");
+  SetText("pro3d", "Extraction du code 3D de dépliage de C vers C++");
+  SetText("pro3e", "Intégration du mailleur de l'Inria à DC3D via Parasolid");
 
-  document.getElementById("pro4a").textContent = "Dassault Systèmes → Ingénieur R&D";
-  document.getElementById("pro4b").textContent = "Oct. 1996 - Juin 1999, Suresnes (92) → 3 ANS";
-  document.getElementById("pro4c").textContent = "Codage des qualités des éléments finis 2D et 3D";
-  document.getElementById("pro4d").textContent = "Codage de l'export de données Bulk Nastran .DAT";
-  document.getElementById("pro4e").textContent = "Formations client au codage spécifique dans CATIA";
+  SetText("pro4a", "Dassault Systèmes → Ingénieur R&D");
+  SetText("pro4b", "Oct. 1996 - Juin 1999, Suresnes (92) → 3 ANS");
+  SetText("pro4c", "Codage des qualités des éléments finis 2D et 3D");
+  SetText("pro4d", "Codage de l'export de données Bulk Nastran .DAT");
+  SetText("pro4e", "Formations client au codage spécifique dans CATIA");
 
-  document.getElementById("pro5a").textContent = "Institut Français du Pétrole → Doctorant";
-  document.getElementById("pro5b").textContent = "Sept. 1993 - Sept. 1996, Rueil-Malmaison (92) → 3 ANS";
-  document.getElementById("pro5c").textContent = "Application 2D simulant les fluides dans les moteurs";
-  document.getElementById("pro5d").textContent = "Résolution des équations d'Euler et de Navier-Stokes";
+  SetText("pro5a", "Institut Français du Pétrole → Doctorant");
+  SetText("pro5b", "Sept. 1993 - Sept. 1996, Rueil-Malmaison (92) → 3 ANS");
+  SetText("pro5c", "Application 2D simulant les fluides dans les moteurs");
+  SetText("pro5d", "Résolution des équations d'Euler et de Navier-Stokes");
 
-  document.getElementById("hobbies0").textContent = "Loisirs";
-  document.getElementById("hobbies1").textContent = "Athlétisme";
-  document.getElementById("hobbies2").textContent = "Marathon";
-  document.getElementById("hobbies3").textContent = "Cyclisme";
-  document.getElementById("hobbies4").textContent = "Séries";
+  SetText("hobbies0", "Loisirs");
+  SetText("hobbies1", "Athlétisme");
+  SetText("hobbies2", "Marathon");
+  SetText("hobbies3", "Cyclisme");
+  SetText("hobbies4", "Séries");
+}
+
+// tools
+
+function GetElt(id) {
+  return document.getElementById(id);
+}
+
+function SetText(id, text) {
+  GetElt(id).textContent = text;
 }
