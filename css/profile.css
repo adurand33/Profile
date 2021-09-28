@@ -39,11 +39,11 @@ h4 {
   display: flex;
 }
 
-.align-c {
+.align-i {
   align-items: center;
 }
 
-.justif-c {
+.justif-i {
   justify-items: center;
 }
 
